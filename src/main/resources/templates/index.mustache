@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sudoku</title>
+    <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1.0, text/html;charset=UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/style/css/webFont.css" rel="stylesheet">
+    <link href="/style/css/sudoku.css" rel="stylesheet">
+</head>
+<body>
+<div style="display:flex; justify-content: center">
+    <h1>Sudoku</h1>
+</div>
+<hr>
+<div class="container">
+    <div class="inner-container">
+        <div class="dummy"></div>
+        <form id="x9" class="grid">
+            <input class="space bl bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bt br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+
+            <input class="space bl bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+            <input class="space bb br" type="number" pattern="\d*" maxlength="1" oninput="maxLengthCheck(this)" onfocus="clearValue(this)">
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <p id="error-message"></p>
+    <button id="clear" class="button" onclick="clearGrid()">Clear</button>
+    <button id="solve" class="button" onclick="solve()">Solve</button>
+</div>
+
+<!-- jquery & bootstrap script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- index.js -->
+<script src="/js/app/sudoku.js"></script>
+</body>
+</html>

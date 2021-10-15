@@ -1,0 +1,115 @@
+body {
+    background: #36454f;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inner-container {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.dummy {
+    margin-top: 100%;
+}
+
+.grid {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.space {
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.5px solid lightgray;
+    float: left;
+    background: white;
+}
+
+#x4 .space {
+    width: 25%;
+    height: 25%;
+    font-size: 40px;
+}
+
+#x6 .space {
+    width: 16.6%;
+    height: 16.6%;
+    font-size: 25px;
+}
+
+#x9 .space {
+    width: 11.1%;
+    height: 11.1%;
+    font-size: 16px;
+}
+
+.bt {
+    border-top: 2px solid black;
+}
+
+.bb {
+    border-bottom: 2px solid black;
+}
+
+.bl {
+    border-left: 2px solid black;
+}
+
+.br {
+    border-right: 2px solid black;
+}
+
+.hide {
+    display: none;
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.button:hover {
+    background: gray;
+    color: white;
+    border: 2px solid white;
+}
+
+.selected {
+    background: #36454f;
+    color: white;
+    border: 2px solid white;
+}
+
+#error-message {
+    color: #ffa500;
+    font-size: 16px;
+}
+
+#solve {
+    background: lightgreen;
+}
+
+#clear {
+    background: salmon;
+}
